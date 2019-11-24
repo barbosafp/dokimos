@@ -1,0 +1,1293 @@
+@charset "UTF-8";
+/* Body */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: black;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	color:#505050;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+	font-size: 36px;
+	line-height: 1;
+	color:#505050;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 1;
+	color:#505050;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+	
+	font-size: 26px;
+	line-height: 1.5;
+	color:#505050;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4{
+	font-size: 22px;
+	line-height: 1;
+	color:#505050;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/* Container */
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: black;
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 5%;
+	background:url("../images/gold.png");
+	border-bottom: 1px solid #000000;
+}
+.logo {
+	color: #fff;
+	font-weight: bold;
+	text-align: undefined;
+	width: 10%;
+	float: left;
+	margin-top: 15px;
+	margin-left: 25px;
+	letter-spacing: 4px;
+}
+nav {
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 25px;
+}
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #40627D;
+}
+
+/* Hero Section */
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 5px;
+}
+
+.hero {
+	background-color: #B3B3B3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/* Slideshow */
+
+.mySlides {display: none}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family:'Playfair Display', serif;
+  color: #f2f2f2;
+  font-size: 90px;
+  padding-bottom: 20%;
+  opacity: 0.95;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px #505050;
+}
+
+.text2 {
+  font-family:'Playfair Display', serif;
+  color: #f2f2f2;
+  font-size: 50px;
+  padding-bottom: 13%;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 3px #202020;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.gallery .thumbnail p {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+/* Gallery Section */
+
+.row {
+  margin: 15px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 6px;
+  padding-right: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: lightgray;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+/* About Section */
+
+
+.about {
+	width: 50%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	display: inline-block;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+
+.light {
+	font-weight: bold;
+	color: #717070;
+}
+
+.missionimg {
+	width: 80%;
+}
+
+
+/* Parallax Section */
+.banner {
+	background-color: #000000;
+	background-image: url("../images/prayer1.jpg");
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.parallaxtitle {
+	color: #606060;
+	text-align: center;
+	padding-top: 10%;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+.parallax_description {
+	color: #606060;
+	text-align: center;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+/* Style the buttons */
+
+
+.btn {
+  background-color: darkgray;
+  border: none;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-top:1%;
+  margin-right: 7px;
+  cursor: pointer;
+  border-radius:4px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* More info */
+footer {
+	background-color: lightgray;
+	padding-bottom: 35px;
+}
+.footer_column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+footer .footer_column h3 {
+	color: #717070;
+	text-align: center;
+}
+footer .footer_column p {
+	color: #717070;
+	background-color: lightgray;
+}
+
+
+.footer_column_about {
+	width: 100%;
+	text-align: justify;
+	padding: 50px 90px 10px 90px;
+	float: left;
+}
+footer .footer_column_about h3 {
+	color: #404040;
+	text-align: center;
+}
+footer .footer_column_about p {
+	color: #717070;
+}
+.footer_column_mission {
+	width: 40%;
+	text-align: justify;
+	padding: 10px 30px 10px 80px;
+	float: left;
+	
+}
+footer .footer_column_mission h3 {
+	color: #404040;
+	text-align: center;
+}
+footer .footer_column_mission p {
+	color: #717070;
+}
+.footer_column_beliefs {
+	width: 60%;
+	text-align: justify;
+	padding: 10px 80px 10px 30px;
+	float: right;
+
+}
+footer .footer_column_beliefs h3 {
+	color: #404040;
+	text-align: center;
+}
+footer .footer_column_beliefs p {
+	color: #717070;
+}
+table .abouttable {
+	
+padding: 20px;
+margin: 20px;
+vertical-align: top;
+}
+
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+	object-fit: cover;
+	object-position: top;
+
+}
+
+
+.readmore:link {
+  color: gray;
+  cursor: pointer;
+}
+
+.readmore:visited {
+  color: gray;
+  cursor: pointer;
+}
+
+.readmore:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.readmore:active {
+  color: black;
+  cursor: pointer;
+} 
+
+
+.missionimg {
+	width: 240px;
+	height: 150px;
+	object-fit: cover;
+	object-position: top;
+}
+
+.aboutimg {
+	width: 800px;
+	height: 300px;
+	object-fit: cover;
+	object-position: top;
+	margin-bottom: 0px;
+}
+
+#aboutmission {
+	margin: 1px 1px 1px 1px;
+	vertical-align: top;
+
+}
+
+#aboutbelief {
+	margin: 1px 1px 1px 1px;
+	vertical-align: top;
+
+}
+.share {
+	background-color: #DBCC96;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+}
+
+.jesusword {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+}
+
+.jesusword h3{
+	text-align: center;
+	padding: 0px;
+}
+
+.jesusword button{
+  background:url("../images/gold.png");
+  border: none;
+  color: #624F00;
+  text-shadow: 0.3px 0.3px 0.1px #fff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  width: 90%;	
+  font-size: 20px;
+  opacity: 0.7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.jesusword button:hover{
+	opacity: 1;
+	
+}
+
+#quoteDisplay {
+	font-size: 32px;
+	text-align: center;
+	font-family: 'Rouge Script', cursive;
+	color: #9F8A38;
+	padding: 0px 200px 30px 200px;	
+}
+
+.connect {
+
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+	
+}
+
+footer .footer_column p {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.subscribebutton {
+	opacity: 0.7;
+	width: 200px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: all 0.3s linear;
+}
+
+.subscribebutton:hover{
+  opacity: 1;
+}
+
+
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #FEFEFE;
+	color: #C4C4C4;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding:20px;
+	background:url("../images/gold.png");
+	color: grey;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+	border-top-color: black;
+}
+.footer_banner {
+	background-color: darkgray;
+	padding: 15px;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	background-repeat: repeat;
+}
+footer {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 50%;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.container header nav {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 100%;
+	float: center;
+	overflow:visible;
+	display:inline-block;
+	background: #52bad5;
+	}
+
+	p {
+	margin: 10px 1px 1px 1px;
+	vertical-align: top;
+	}
+	
+header nav ul {
+	align-content: center;
+	margin: 15px;
+	padding: 10px 50px;
+}
+nav ul li {
+	padding: 0px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	text-align: center;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+footer .footerabout {
+	width:  50%;}
+	
+.footer_column {
+	width: 100%;
+	margin: 0px;
+    padding:0px;
+
+}
+.footer_column_about {
+	width: 100%;
+	padding: 10px 15px 15px 15px;
+	}
+.footer_column_mission {
+	width: 100%;
+  	padding: 15px 15px 15px 15px;
+
+	}
+.footer_column_beliefs {
+	width: 100%;
+	padding: 15px 15px 15px 15px;
+	}
+	
+.footer_banner {
+	background-color: darkgray;
+	padding: 1px 1px 15px 1px;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+	
+/* Parallax Section */
+.banner {
+	background-color: #000000;
+	background-image: url("../images/prayer1.jpg");
+	height: 500px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.parallaxtitle {
+	color: #606060;
+	text-align: center;
+	padding-top: 10%;
+	letter-spacing: 2px;
+	margin-top: 0px;
+}
+.parallax_description {
+	color: #404040;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+	
+.tagline {
+	margin-top: 20px;
+	line-height: 22px;
+}
+.hero_header {
+	margin-top: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+.aboutimg {
+	max-width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.missionimg {
+	max-width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+	
+.cards {
+	max-width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+	
+/* Gallery Section */
+
+.row {
+  margin: 1px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2px;
+  padding-right: 2px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: lightgray;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+	
+	/* Slideshow */
+
+.mySlides {	
+	display:inline-block;
+	box-sizing:border-box;
+	padding-top: 0px;
+	}
+
+/* Slideshow container */
+.slideshow-container {
+  display: inline-block;
+	height: auto;
+  
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -40px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family:'Playfair Display', serif;
+  color: #f2f2f2;
+  font-size: 24px;
+  padding-bottom: 20%;
+  opacity: 0.95;
+  position: absolute;
+  bottom: 10px;
+  max-width: 100%;
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px #505050;
+}
+
+.text2 {
+  font-family:'Playfair Display', serif;
+  color: #f2f2f2;
+  font-size: 14px;
+  padding-bottom: 10%;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 3px #202020;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+.jesusword {
+	background-color: white;
+	padding: 10px 0px 60px 0px;
+	margin-bottom: 0px;
+}
+
+.jesusword h3{
+	text-align: center;
+	padding: 0px;
+}
+
+.jesusword button{
+  background:url("../images/gold.png");
+  border: none;
+  color: #624F00;
+  text-shadow: 0.3px 0.3px 0.1px #fff;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  width: 90%;	
+  font-size: 18px;
+  opacity: 0.7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.jesusword button:hover{
+	opacity: 1;
+	
+}
+
+#quoteDisplay {
+	font-size: 32px;
+	text-align: center;
+	font-family: 'Rouge Script', cursive;
+	color: #9F8A38;
+	padding: 0px 10px 30px 10px;	
+}
+	
+}
+
+
+	
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+
+.hero_header {
+	margin-top: 100px;
+	padding-left: 1px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+	
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: #043745;
+}
+.container header nav {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 100%;
+	float: center;
+	overflow:visible;
+	display:inline-block;
+	background: #52bad5;
+	}
+
+p {
+	margin: 5px;
+	padding: 5px;
+	vertical-align: top;
+	font-size: 16px;
+	}
+
+h4 {
+	margin: 5px;
+	padding: 5px;
+	vertical-align: top;
+	font-size: 24px;
+	
+	}
+	
+header nav ul {
+	padding: 0px;
+	float: none;
+}
+nav ul li {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+	
+footer .footerabout {
+	max-width:  50%;}
+	
+.footer_column {
+	width: 100%;
+	margin: 0px;
+    padding:0px;
+
+}
+.footer_column_about {
+	max-width: 100%;
+	padding: 15px 25px 15px 25px;}
+
+.footer_column_mission {
+	width: 100%;
+	padding: 15px 25px 15px 25px;
+	}
+.footer_column_beliefs {
+	width: 100%;
+	padding: 15px 25px 15px 25px;
+	}
+
+.thumbnail {
+	width: 50%;
+}
+
+.aboutimg {
+	max-width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+		
+/* Slideshow */
+
+.mySlides {	
+	display:inline-block;
+	box-sizing:border-box;
+	padding-top: 0px;
+	}
+
+/* Slideshow container */
+.slideshow-container {
+  display: inline-block;
+	height: auto;
+  
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 50px;
+  margin-top: -70px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family:'Playfair Display', serif;
+  color: #f2f2f2;
+  font-size: 36px;
+  padding-bottom: 20%;
+  opacity: 0.95;
+  position: absolute;
+  bottom: 10px;
+  max-width: 100%;
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px #505050;
+}
+
+.text2 {
+  font-family:'Playfair Display', serif;
+  color: #f2f2f2;
+  font-size: 20px;
+  padding-bottom: 10%;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 3px #202020;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+	
+/* Gallery Section */
+
+.row {
+  margin: 1px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2px;
+  padding-right: 2px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: lightgray;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+.jesusword {
+	background-color: white;
+	padding: 10px 0px 60px 0px;
+	margin-bottom: 0px;
+}
+
+.jesusword h3{
+	text-align: center;
+	padding: 0px;
+}
+
+.jesusword button{
+  background:url("../images/gold.png");
+  border: none;
+  color: #624F00;
+  text-shadow: 0.3px 0.3px 0.1px #fff;
+  padding: 1px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  width: 90%;	
+  font-size: 18px;
+  opacity: 0.7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.jesusword button:hover{
+	opacity: 1;
+	
+}
+
+#quoteDisplay {
+	font-size: 32px;
+	text-align: center;
+	font-family: 'Rouge Script', cursive;
+	color: #9F8A38;
+	padding: 0px 10px 30px 10px;	
+}
+	
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 50%;
+}
+.text_column {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+		
+	
+.footer_column {
+	width: 100%;
+}
+.footer_column_about {
+	width: 100%;
+	padding: 25px 50px 25px 50px;
+}
+.footer_column_mission {
+	width: 100%;
+	padding: 25px 50px 25px 50px;
+	}
+.footer_column_beliefs {
+	width: 100%;
+	padding: 25px 50px 25px 50px;
+	}
+	.aboutimg {
+	max-width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+	
+	
+.jesusword {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+}
+
+.jesusword h3{
+	text-align: center;
+	padding: 0px;
+}
+
+.jesusword button{
+  background:url("../images/gold.png");
+  border: none;
+  color: #624F00;
+  text-shadow: 0.3px 0.3px 0.1px #fff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  width: 90%;	
+  font-size: 20px;
+  opacity: 0.7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.jesusword button:hover{
+	opacity: 1;
+	
+}
+
+#quoteDisplay {
+	font-size: 32px;
+	text-align: center;
+	font-family: 'Rouge Script', cursive;
+	color: #9F8A38;
+	padding: 0px 100px 30px 100px;	
+}
+}

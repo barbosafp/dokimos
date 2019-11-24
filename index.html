@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dokimos - Welcome!</title>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Rouge+Script|Source+Sans+Pro&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header>  
+	  <a href="index.html"><img src="images/logo.png" alt="title" width="150" height="45"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li> <a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+	
+  <!-- Slideshow Section -->
+  <section>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/cloudsfinal.gif" style="width:100%" alt="Accept Jesus">
+  <div class="text">DOKIMOS</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideimg2.jpg" style="width:100%" alt="Accept Jesus">
+  <div class="text2">God is always with me</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/slideimg3.jpg" style="width:100%" alt="Accept Jesus">
+  <div class="text2">God is always with you</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </section>
+	<!-- Parallax Section -->
+	<div>
+  <section class="banner">
+    <h2 class="parallaxtitle">Today's Daily Prayer</h2>
+    <p class="parallax_description">Lord, I ask for your guidance today as I set out for better opportunities than yesterday. Do not let me stray from my path for You're my Shepherd oh Lord. Let Your staff prevent me from any error and let Your eyes watch over me and protect me from all danger. You're the only God and no matter is too big for You Lord. So, let flattened all issues that may plague my day—Amen.</p>
+  </section>
+	
+	  </div>
+  
+  <!-- About Section -->
+	 
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3><strong>The God Search</strong><br>
+      </h3>
+      <img src="images/religious1.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>I was searching for God but rejected a number of religions due to what I found as their fallacious claims. Yes, I also knew a number of Born-Again Christians. Still, there were matters I found that needed to be addressed about the gospel message of Jesus Christ. After all this search I found out that God is actually everywhere. <strong><a href="http://maverickchristians.com/2019/07/31/does-the-holy-bible-disprove-jesus-as-risen/" class="readmore" target="_blank">Read more... </a></strong></p>
+    </article>
+	  <article class="footer_column">
+	    <h3><strong>Does Jesus Celebrate Chanukah?</strong><br>
+        </h3>
+	    <img src="images/religious2.jpg" alt="" width="400" height="200" class="cards"/>
+	    <p>Chanukah (Hanukkah) is a beautiful Hebrew tradition celebrated throughout the whole world. At this time, during the lighting of the candles, it is said… “Blessed art thou, O Lord our God, King of the universe, who has sanctified us by thy commandments, and commanded us to kindle the light of Chanukah. See if Jesus celebrates! <a href="http://maverickchristians.com/2016/12/31/god-commanded-us-to-light-chanukah-candles/" class="readmore" target="_blank"><strong>Read more... </strong></a></p>
+      </article>
+    <article class="footer_column">
+      <h3><strong>Recollections of My Religious Search</strong><br>
+      </h3>
+      <img src="images/religious3.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>During my college days I became an agnostic, subsequent to being an atheist, personally considering there was a possibility of there being some kind of God, I had conversations with people of various religious faiths in search for proof. Through these conversation, I have learned good & bad. <strong><a href="http://maverickchristians.com/2016/06/23/recollections-of-my-religious-search-and-skepticism/" class="readmore" target="_blank">Read more... </a></strong></p>
+    </article>
+	  <article class="footer_column">
+	    <h3><strong>What the Bible Says About Your Salvation</strong><br>
+        </h3>
+	    <img src="images/religious4.jpg" alt="" width="400" height="200" class="cards"/>
+	    <p>If you really want to be sure of your salvation you need to be able to reopen the question. The Holy Bible clearly instructs us… Therefore, brethren, be even more diligent to make your call and election sure, for if you do these things you will never stumble. <strong><a href="http://maverickchristians.com/2016/05/16/how-to-surely-know-you-are-surely-saved/" class="readmore" target="_blank">Read more...</a></strong></p>
+	  </article>
+  </footer>
+  <!-- Footer Section -->
+  <section class="footer_banner">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="subscribebutton" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrHOltUI1jPecZ_pI_-G5fnx1e4pENqP7QsQpNDrxzXyaaeQ/viewform?usp=sf_link" target="_blank"><img src="images/subscribebutton.png" height="100px" alt="Subscribe Button"></a></div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2019 - <strong>DG8003</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>

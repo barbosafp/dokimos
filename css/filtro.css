@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: black;
+}
+
+/*Header style*/
+
+nav {
+	float: right;
+	text-align: right;
+	margin-right: 0px;
+	margin-top: 0px;
+	background:url("gold.png");
+	width: 100%;
+}
+
+header nav ul {
+	list-style: none;
+	float: right;
+}
+nav ul li {
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul li:hover a {
+	color: #2C9AB7;
+}
+
+
+/*Body*/
+
+body {
+	font-family: source-sans-pro;
+	background-color: black;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+/* Style the buttons */
+
+
+.btn {
+  background-color: darkgray;
+  border: none;
+  color: white;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-top:1%;
+  margin-right: 7px;
+  cursor: pointer;
+  border-radius:4px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* More info */
+.footer_banner {
+	background-color:darkgray;
+	padding: 15px;
+	margin-bottom: 1%;
+	margin-top: 2%;
+	background-image: url(../images/pattern.png);
+	background-repeat: repeat;
+}
+footer {
+	display: inline-block;
+}
+
+.copyright {
+	text-align: center;
+	padding:20px;
+	background:url("gold.png");
+	color: grey;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+	border-top-color: black;
+}
+
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #FEFEFE;
+	color: #C4C4C4;
+	cursor: pointer;
+}
+
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+}

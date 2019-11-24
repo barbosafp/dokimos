@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery - Dokimos</title>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+<link href="css/style.css" rel="stylesheet" type="text/css">	
+<link href="https://fonts.googleapis.com/css?family=Rouge+Script|Source+Sans+Pro&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="container">
+
+<!-- Navigation -->
+ <header> 
+	  <a href="index.html"><img src="images/logo.png" alt="title" width="150" height="45"></a>
+	<nav>
+      <ul>
+		<li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+</header>
+
+  
+
+<!-- MAIN (Center website) -->
+
+	
+	<div id="myBtnContainer">
+	  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+	  <button class="btn" onclick="filterSelection('Jesus')"> Jesus</button>
+	  <button class="btn" onclick="filterSelection('Prayers')"> Prayers</button>
+	  <button class="btn" onclick="filterSelection('Imagery')"> Imagery</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Jesus">
+    <div class="content">
+      <img src="images/jesus1.jpg" alt="Mountains" style="width:100%">
+      <h4>Portrait</h4>
+      <p>Always with you</p>
+    </div>
+  </div>
+  <div class="column Jesus">
+    <div class="content">
+    <img src="images/jesus2.jpg" alt="Lights" style="width:100%">
+      <h4>In the valley</h4>
+      <p>Painting</p>
+    </div>
+  </div>
+  
+  <div class="column Jesus">
+    <div class="content">
+    <img src="images/jesus3.jpg" alt="Nature" style="width:100%">
+      <h4> Jesus Painting</h4>
+      <p>By Pedro</p>
+    </div>
+  </div>
+  
+  
+  <div class="column Prayers">
+    <div class="content columnPrayers">
+    <img src="images/quote2.png" alt="Prayers" style="width:100%">
+      <h4>Love</h4>
+      <p>Corintios 13.</p>
+    </div>
+  </div>
+  <div class="column Prayers">
+    <div class="content columnPrayers">
+    <img src="images/quote1.png" alt="Prayers" style="width:100%">
+      <h4>Guidance</h4>
+      <p>Lucas 12.</p>
+    </div>
+  </div>
+  <div class="column Prayers">
+    <div class="content">
+      <img src="images/quote3.png" alt="Prayers" style="width:100%">
+      <h4>Love</h4>
+      <p>Corintios 13</p>
+    </div>
+  </div>
+  
+  <div class="column Imagery">
+    <div class="content">
+    <img src="images/imagery2.jpg" alt="Imagery" style="width:100%">
+      <h4>Cross</h4>
+      <p>Angola.</p>
+    </div>
+  </div>
+  <div class="column Imagery">
+    <div class="content">
+    <img src="images/imagery3.jpg" alt="Imagery" style="width:100%">
+      <h4>Rosary</h4>
+      <p>Spain grandma.</p>
+    </div>
+  </div>
+  <div class="column Imagery">
+    <div class="content">
+      <img src="images/imagery1.jpg" alt="Imagery" style="width:100%">
+      <h4>Religious paint</h4>
+      <p> By Mateo</p>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+<section class="footer_banner" id="contact">
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+     <div class="subscribebutton" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrHOltUI1jPecZ_pI_-G5fnx1e4pENqP7QsQpNDrxzXyaaeQ/viewform?usp=sf_link" target="_blank"><img src="images/subscribebutton.png" height="100px"></a></div>
+</section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2019 - <strong>DG8003</strong></div>
+  
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	
+	</script>
+</div>
+</body>
+</html>
