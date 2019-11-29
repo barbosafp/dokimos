@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Source+Sans+Pro&display=swap" rel="stylesheet">
 	
 </head>
-<body>
+<body onload="newQuote()">
 <!-- Main Container -->
 <div class="container"> 
   <!-- Navigation -->
@@ -96,8 +96,21 @@ function showSlides(n) {
 	<!-- Parallax Section -->
 	<div>
   <section class="banner">
+	  
+	  <script>
+
+	var quotes = ["Lord, I ask for your guidance today as I set out for better opportunities than yesterday. Do not let me stray from my path for You're my Shepherd oh Lord. Let Your staff prevent me from any error and let Your eyes watch over me and protect me from all danger. You're the only God and no matter is too big for You Lord. So, let flattened all issues that may plague my day—Amen.", "God in heaven hear my prayer, keep me in thy loving care. Be my guide in all I do, Bless all those who love me too. Bless us, O Lord, and these Thy gifts which we are about to receive from Thy bounty, through Christ, Our Lord, Amen","Holy Jesus, every day keep us in the narrow way, and when earthly things are past, bring our ransomed souls at last where they need no star to guide.Where no clouds Thy glory hide.Amen", "Direct me now, O gracious Lord, To hear aright Thy holy Word; Assist Thy minister to preach, and let Thy Holy Spirit teach, and let eternal life be found by all who hear the joyful sound. Amen."]
+	
+	function newQuote() {
+		var randomNumber = Math.floor(Math.random()*(quotes.length));
+	document.getElementById('prayerDisplay').innerHTML=quotes[randomNumber];
+		
+	}
+</script>
+	  
     <h2 class="parallaxtitle">Today's Daily Prayer</h2>
-    <p class="parallax_description">Lord, I ask for your guidance today as I set out for better opportunities than yesterday. Do not let me stray from my path for You're my Shepherd oh Lord. Let Your staff prevent me from any error and let Your eyes watch over me and protect me from all danger. You're the only God and no matter is too big for You Lord. So, let flattened all issues that may plague my day—Amen.</p>
+	<p class="parallax_description" id="prayerDisplay"></p>
+	  
   </section>
 	
 	  </div>
