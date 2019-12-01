@@ -475,7 +475,7 @@ vertical-align: top;
 .jesusword {
 	background-color: white;
 	padding-top: 10px;
-	padding-bottom: 60PX;
+	padding-bottom: 120PX;
 	margin-bottom: 0px;
 }
 
@@ -608,6 +608,100 @@ footer {
 .hidden {
 	display: none;
 }
+
+/*Contact us Form*/
+
+.collapsible {
+  background: url(gold.png);
+  cursor: pointer;
+  padding: 10px;
+  width: 90%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  color:#624F00;
+  text-shadow: 0.3px 0.3px 0.1px #fff;
+  opacity: 0.7;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  opacity: 1;
+}
+
+#content{
+ font-family:'Source Sans Pro',sans-serif;
+ padding-left: 25%;
+ padding-right: 25%;
+ background-color: #f2f2f2;
+ padding-top: 150px;
+ padding-bottom: 70px;
+ width: 100%;
+
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width:100%;
+  padding-left: 12px;
+  border:3px solid #DBCC96;
+  height:35px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit]{
+  width:100%;
+  padding:10px;
+  background-color:#DBCC96;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+  font-family:'Source Sans Pro',sans-serif;
+}
+
+input[type=submit]:hover{
+  width:100%;
+  padding:10px;
+  background-color:#C0B58E;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+  font-family:'Source Sans Pro',sans-serif;
+}
+
+#content h1{
+margin-top:40px
+}
+hr{
+margin-top:-5px;
+color: #DBCC96; 
+}
+label{
+float:left;
+font-size:16px
+}
+input[type="text"]{
+width:100%;
+margin-top:10px;
+height:35px;
+margin-bottom:25px;
+border:3px solid #DBCC96;
+background-color:#F8F8F8;
+}
+
+
 
 /* Mobile */
 @media (max-width: 320px) {
